@@ -1,8 +1,20 @@
 package com.ecpe308.sample;
 
 public class Person {
-    private String lastName, firstName, address;
+    private String lastName, firstName, address, nationality;
     private int age;
+
+    public Person(String nationality) {
+        this.nationality = nationality;
+    }
+
+    public String getNationality() {
+        return nationality;
+    }
+
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
 
     public Person() {
 
